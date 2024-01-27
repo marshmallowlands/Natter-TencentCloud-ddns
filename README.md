@@ -20,7 +20,7 @@
 
 
 2.打开[腾讯云 API 密钥](https://console.dnspod.cn/account/token/apikey)创建好api秘钥之后将它保存下来：
-![](.img/img01.png)
+![](img/img01.png)
 
 
 
@@ -28,11 +28,11 @@
  目前最多支持5个SRV解析,因为支持SRV的软件太少了,所以就只写了5个
   这里直接照着我的一模一样的填就行了（防止不会弄而出错，反正后面都会被ddns自动改掉）
   
-  _minecraft._tcp  |  SRV  |   默认  |  0 5 9999 tencent.com. 
-  -----------------|-------|---------|-------------------------
-  @                |   A   |   默认  |  99.99.99.99
-             
-![](.img/img02.png)
+| _minecraft._tcp | SRV | 默认 | 0 5 9999 tencent.com. |
+|-----------------|-----|----|-----------------------|
+| @               | A   | 默认 | 99.99.99.99           |
+
+![](img/img02.png)
 
 
 
@@ -40,7 +40,7 @@
 分别是两个库的安装命令分别是：
 
 
-pip install --upgrade tencentcloud-sdk-python 
+<code>pip install --upgrade tencentcloud-sdk-python</code>
                  
 ****
 
@@ -52,7 +52,7 @@ pip install Flask
 默认只有127.0.0.1能访问到，想要让它能在公网或者局域网访问请自行编辑web.py文件(里面有说该怎么编辑)
 打开之点击 Git ID 然后把刚刚保存的API秘钥填上
 以及要ddns的域名(目前仅支持单个域名)
-![](.img/img03.png)
+![](img/img03.png)
 
 
 
@@ -62,20 +62,20 @@ pip install Flask
 
 
 7点击上面的ddns按钮,按照框里的提示去填,然后点击保存
-![](.img/img04.png)
+![](img/img04.png)
 
 
 
 8.保存之后,点击上面的natter按钮,然后根据你需要的端口号去填(需要穿透多少个就填多少个)
 填完之后,点击最下面的保存
-![](.img/img05.png)
+![](img/img05.png)
 
 
 
 9.全部弄完之后,点击右边的 主页 然后点击 开始natter 和 开始ddns
 要等natter把端口号都打印完了再点ddns（手动刷新日志）
 即可开始工作(记得检测域名解析有没有生效)
-![](.img/img06.png)
+![](img/img06.png)
 
 
 

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../../font/Roboto-VF.ttf");
+}
+
+@font-face {
+    font-family: HarmonyOSHans;
+    src: url("../../font/HarmonyOSHans.ttf");
+}
+
+@font-face {
+    font-family: sarasa-fixed-sc-regular-nerd-font;
+    src: url("../../font/sarasa-fixed-sc-regular-nerd-font.ttf");
+}
+
+* {
+    font-family: 'Roboto','HarmonyOSHans',sans-serif; !important;
+}
